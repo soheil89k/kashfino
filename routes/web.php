@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('', '\App\Http\Controllers\Website\HomeController@index')->name("web.home");
+Route::get('login', '\App\Http\Controllers\Website\Auth\LoginController@login')->name("web.login");
+Route::get('register', '\App\Http\Controllers\Website\Auth\LoginController@register')->name("web.register");
+Route::get('logout', '\App\Http\Controllers\Website\Auth\LoginController@logout')->name("web.logout");

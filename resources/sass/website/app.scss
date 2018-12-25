@@ -1,0 +1,17 @@
+
+@import "_variables";
+@import "static";
+/**
+COMPONENTS
+**/
+/**
+LAYOUTS
+**/
+@import "layout/header";
+@import "layout/footer";
+/**
+PAGES
+**/
+@import "pages/404";
+@import "pages/home_page";
+@import "pages/register";

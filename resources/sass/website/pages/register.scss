@@ -1,0 +1,26 @@
+.register-page {
+  max-width: 550px;
+  margin: auto;
+  .form {
+    margin: 50px 0;
+    .form-group {
+      display: flex;
+      .caption-box {
+        padding-top: 5px;
+        width: 120px;
+      }
+      .value-box {
+        flex: 1;
+      }
+    }
+  }
+  .terms-and-conditions-note {
+    text-align: justify;
+  }
+  .btn-box {
+    text-align: center;
+  }
+  .login-link-box {
+    margin-top: 20px;
+  }
+}

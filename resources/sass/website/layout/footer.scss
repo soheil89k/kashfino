@@ -1,0 +1,80 @@
+footer {
+  background-color: #1a1a1a;
+  padding: 20px 0 0 0 ;
+
+  .top-row {
+
+    .column {
+      .col-title {
+        color: #ddd;
+        font-size: 16px;
+        margin-bottom: 18px;
+      }
+      ul {
+        li {
+          a {
+            color: #888;
+            &:hover {
+              color: $primary-color;
+
+            }
+          }
+        }
+      }
+      .download-app-box {
+        a {
+          border: 1px #888888 solid;
+          display: block;
+          width: 180px;
+          border-radius: 2px;
+          padding: 10px;
+          margin-top: 10px;
+          i {
+            font-size: 20px;
+            margin-left: 10px;
+          }
+          &:hover {
+            text-decoration: none;
+            border-color: $primary-color;
+            color: $primary-color;
+          }
+        }
+      }
+    }
+
+    .e-namad {
+      background-position: right;
+      height: 100%;
+    }
+  }
+  .bottom-row {
+    background: rgba(255,255,255,0.02);
+    margin-top: 20px;
+    padding-top: 20px;
+    .copy-right {
+      display: flex;
+      justify-content: space-between;
+      .right-box {
+        .social-links {
+          display: flex;
+          li {
+            a {
+              padding: 5px;
+              margin-left: 10px;
+              font-size: 18px;
+              color: #666;
+              &:hover{
+                color:#999;
+              }
+            }
+          }
+        }
+      }
+      .left-box {
+        color: #999;
+        direction: ltr;
+        font-family: tahoma;
+      }
+    }
+  }
+}

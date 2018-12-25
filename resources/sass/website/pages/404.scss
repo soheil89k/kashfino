@@ -1,0 +1,21 @@
+.page-404 {
+  background: #eeeeee;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > div {
+    text-align: center;
+    .big-title {
+      font-size: 60px;
+      color: $primary-color;
+    }
+    .description {
+
+    }
+  }
+}

@@ -1,0 +1,346 @@
+.home-page {
+  margin-top: -30px;
+  .section-title {
+    font-size: 28px;
+    color: $primary-color;
+    text-align: center;
+  }
+  .section-description {
+    text-align: center;
+    font-size: 17px;
+  }
+  .billboard {
+    height: 420px;
+    width: 100%;
+    background-size: cover;
+    background-position: bottom;
+    /*background-attachment: fixed;*/
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      background: rgba(0, 0, 0, 0.7);
+      width: 100%;
+      height: 100%;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-around;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+      .title {
+        text-align: center;
+        color: #FFFFFF;
+        font-weight: 700;
+        span {
+          color: $primary-color
+        }
+      }
+      .description {
+        text-align: center;
+        font-size: 21px;
+        color: #FFFFFF;
+      }
+      .search-box {
+        display: flex;
+        input {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .business-separator-section {
+    padding: 70px 0;
+    .content {
+      .card-design {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          padding: 8px;
+          flex: 0 0 33.33%;
+          max-width: 33%;
+
+          a {
+            color: $title-color;
+            display: block;
+            border-radius: 5px;
+            box-shadow: -13px 13px 34px 0 rgba(0, 0, 0, 0.02);
+            background: #FFFFFF;
+            padding: 18px 15px;
+            i {
+              color: $primary-color;
+              margin-left: 8px;
+              font-size: 25px;
+            }
+          }
+        }
+      }
+      .item-design {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        li {
+          a {
+            display: block;
+            padding: 10px 30px;
+            font-size: 16px;
+            color: $title-color;
+            i {
+              font-size: 25px;
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .best-business-section {
+    padding: 70px 0;
+    background: #FFFFFF;
+    .content {
+      .slide-show-box {
+        .group {
+          .card {
+            border: 1px #DDDDDD solid;
+            border-radius: 3px;
+            margin-bottom: 25px;
+            background: #FFFFFF;
+            background-position: center;
+            background-size: cover;
+            &:after {
+              bottom: 0;
+              left: 0;
+              content: '';
+              width: 100%;
+              height: 50%;
+              position: absolute;
+              background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.75) 100%);
+            }
+            .title {
+              font-size: 18px;
+              font-weight: 600;
+              position: absolute;
+              right: 15px;
+              bottom: 30px;
+              color: #FFFFFF;
+              z-index: 2;
+            }
+            .description {
+              font-size: 14px;
+              position: absolute;
+              right: 15px;
+              bottom: 10px;
+              color: #FFFFFF;
+              z-index: 2;
+            }
+            .rank-box {
+              position: absolute;
+              left: 15px;
+              bottom: 15px;
+              background: $primary-color;
+              z-index: 2;
+              padding: 5px 8px;
+              border-radius: 4px;
+              color: #FFFFFF;
+              i {
+                font-size: 10px;
+              }
+            }
+          }
+          .item1 {
+            height: 136px;
+          }
+          .item2 {
+            height: 300px;
+          }
+          .item3 {
+            height: 300px;
+          }
+        }
+      }
+      .controller {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        .fa-chevron-right {
+          margin-left: 30px;
+          font-size: 25px;
+          color: #888;
+          cursor: pointer;
+        }
+        .fa-chevron-left {
+          margin-right: 30px;
+          font-size: 25px;
+          color: #888;
+          cursor: pointer;
+        }
+        ul {
+          display: flex;
+          justify-content: center;
+          li {
+            a {
+              cursor: pointer;
+              margin: 8px 10px;
+              display: block;
+              width: 8px;
+              height: 8px;
+              background: #DDDDDD;
+              border-radius: 50%;
+              &.active {
+                background: $primary-color;
+                transform: scale(1.2);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .complete-your-city-section {
+    padding: 70px 0;
+    .content {
+      .item {
+        margin-top: 25px;
+        .card {
+          padding: 15px;
+          .header {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px #DDDDDD solid;
+            margin-bottom: 8px;
+            padding-bottom: 8px;
+            .avatar-box {
+              margin-left: 30px;
+              width: 50px;
+              height: 50px;
+              border: 1px #DDDDDD solid;
+              border-radius: 50%;
+              background-position: top;
+              background-size: cover;
+            }
+            .detail-box {
+              h4 {
+                font-size: 16px;
+                font-weight: 600;
+                margin: 0 0 5px 0;
+              }
+              p {
+                font-size: 12px;
+                margin: 0;
+                color: $text-color
+              }
+            }
+          }
+          .context {
+            display: flex;
+            .image-box {
+              border: 1px #DDDDDD solid;
+              border-radius: 4px;
+              width: 185px;
+              height: 125px;
+              background-position: top;
+              background-size: cover;
+            }
+            p {
+              padding-right: 20px;
+              margin: 0;
+              flex: 1;
+              font-size: 16px;
+              color: $text-color;
+              font-weight: 400;
+              text-align: justify;
+              a {
+                color: $primary-color;
+                cursor: pointer;
+              }
+            }
+          }
+          .footer {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+            .right-box {
+              i {
+                color: $primary-color;
+              }
+            }
+            .left-box {
+              i {
+                color: #ff4747;
+              }
+            }
+          }
+        }
+      }
+      .controller {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        .fa-chevron-right {
+          margin-left: 30px;
+          font-size: 25px;
+          color: #888;
+          cursor: pointer;
+        }
+        .fa-chevron-left {
+          margin-right: 30px;
+          font-size: 25px;
+          color: #888;
+          cursor: pointer;
+        }
+        ul {
+          display: flex;
+          justify-content: center;
+          li {
+            a {
+              cursor: pointer;
+              margin: 8px 10px;
+              display: block;
+              width: 8px;
+              height: 8px;
+              background: #DDDDDD;
+              border-radius: 50%;
+              &.active {
+                background: $primary-color;
+                transform: scale(1.2);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .business-owner-request-section {
+    padding: 70px 0;
+    background: $primary-color;
+    .section-title {
+      color: #FFFFFF;
+      font-size: 35px;
+    }
+    .section-description {
+      color: #FFFFFF;
+    }
+    .content {
+      margin-top: 45px;
+      text-align: center;
+      .btn-white {
+        background: #FFFFFF;
+        color: $primary-color;
+        margin-left: 20px;
+      }
+      .btn-primary {
+        background: darken($primary-color, 20%);
+        color: #FFFFFF;
+        margin-right: 20px;
+      }
+    }
+  }
+}
